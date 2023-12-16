@@ -7,7 +7,7 @@ const app = new cdk.App();
 new AwsCdkTestStack(app, 'AwsCdkTestStack', {
   stackName: 'cdk-test-stack',
   env: {
-    region: process.env.CDK_DEFAULT_REGION,
+    region: process.env.CDK_DEFAULT_REGION || 'us-east-2',
     account: process.env.CDK_DEFAULT_ACCOUNT,
   },
 
