@@ -12,3 +12,9 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 * `npx cdk deploy`  deploy this stack to your default AWS account/region
 * `npx cdk diff`    compare deployed stack with current state
 * `npx cdk synth`   emits the synthesized CloudFormation template
+
+
+## Build and Run Dockerfile
+
+* `docker build -t your_image_name .`
+* `docker run -e AWS_REGION=your_desired_region -it your_image_name`
