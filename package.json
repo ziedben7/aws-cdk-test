@@ -1,8 +1,8 @@
 {
-  "name": "cdk-test",
+  "name": "aws-cdk-test",
   "version": "0.1.0",
   "bin": {
-    "cdk-test": "bin/cdk-test.js"
+    "aws-cdk-test": "bin/aws-cdk-test.js"
   },
   "scripts": {
     "build": "tsc",
@@ -11,16 +11,17 @@
     "cdk": "cdk"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.8",
-    "@types/node": "20.9.1",
+    "@types/jest": "^29.5.11",
+    "@types/node": "20.10.4",
+    "aws-cdk": "2.115.0",
     "jest": "^29.7.0",
     "ts-jest": "^29.1.1",
-    "aws-cdk": "2.114.1",
-    "ts-node": "^10.9.1",
-    "typescript": "~5.2.2"
+    "ts-node": "^10.9.2",
+    "typescript": "~5.3.3"
   },
   "dependencies": {
-    "aws-cdk-lib": "2.114.1",
+    "@aws-cdk/aws-ec2": "^1.204.0",
+    "aws-cdk-lib": "2.115.0",
     "constructs": "^10.0.0",
     "source-map-support": "^0.5.21"
   }
